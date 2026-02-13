@@ -3,35 +3,92 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from "react";
+import { ShieldCheck, Layers, Landmark, Mic2, Handshake, Settings } from "lucide-react";
+
 
 const services = [
   {
-    icon: "🎧",
+
+    icon: <ShieldCheck
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />,
     title: "20+ Years Experience",
     desc: "Over two decades of proven expertise in the audio-visual industry.",
   },
   {
-    icon: "💡",
+    icon: <Layers
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />
+    ,
     title: "End-to-End AV Solutions",
     desc: "Complete AV, LED & lighting solutions from design to delivery.",
   },
   {
-    icon: "🏨",
+    icon: <Landmark
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />
+
+    ,
     title: "Hospitality & Commercial",
     desc: "Specialized solutions for hotels, offices, and commercial spaces.",
   },
   {
-    icon: "🔊",
+    icon: <Mic2
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />
+    ,
     title: "Audio & Acoustic Experts",
     desc: "Professional audio, acoustic, and visual system integration.",
   },
   {
-    icon: "🌍",
+    icon: <Handshake
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />
+    ,
     title: "Global Brand Partners",
     desc: "Premium products from trusted global-standard brands.",
   },
   {
-    icon: "🛠️",
+    icon: <Settings
+      className="mb-7
+    w-14 h-14
+    text-[var(--primery)]
+    transition-all duration-300 ease-out
+    hover:scale-110
+    hover:drop-shadow-[0_0_12px_var(--primery)]
+  "
+    />
+    ,
     title: "Installation & AMC",
     desc: "Reliable installation with long-term AMC and technical support.",
   },
@@ -441,14 +498,13 @@ const Home = () => {
                     className="
                 w-[85vw] md:w-[40vw] lg:w-[25vw]
                 min-h-[260px] md:h-[40vh]
-                flex flex-col justify-center items-start flex-shrink-0
+                flex flex-col justify-center items-start gap-1 flex-shrink-0
                 bg-white/10 backdrop-blur-lg
                 border border-white/20 shadow-lg rounded-xl p-6
                 hover:border-[var(--primery)]
                 transition duration-300 ease hover:translate-y-1"
                   >
-                    <div className="text-3xl mb-4">{item.icon}</div>
-
+                    {item.icon}
                     <h3 className="font-semibold text-lg text-[var(--primery)]">
                       {item.title}
                     </h3>
@@ -780,11 +836,6 @@ const Home = () => {
 
         </div>
       </div>
-
-
-
-
-
     </div>
   )
 }
