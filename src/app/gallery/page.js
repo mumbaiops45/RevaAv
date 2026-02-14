@@ -72,11 +72,22 @@ export default function GallerySection() {
 
     return (
         <section
-            className="relative px-6 md:px-10 lg:px-20 pt-12 md:pt-16
-      before:content-[''] before:absolute before:inset-0
-      before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-      after:content-[''] after:absolute after:inset-0
-      after:bg-black/80 after:z-[-1]"
+            className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+  before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-[400px]
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+"
         >
             <div className="relative z-10 max-w-7xl mx-auto">
 
@@ -89,12 +100,12 @@ export default function GallerySection() {
                 <div className="flex items-center gap-6 h-[400px] w-full max-w-5xl mt-10 mx-auto">
                     <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
                         <img className="h-full w-full object-cover object-center"
-                            src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?q=80&w=800&h=400&auto=format&fit=crop"
+                            src="/LedWall.jpg"
                             alt="LED Wall Solution" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="text-3xl">LED Wall Solutions</h1>
-                            <p className="text-sm">
+                            <h1 className="hidden  md:block text-3xl">LED Wall Solutions</h1>
+                            <p className="hidden md:block text-sm">
                                 High-performance LED display systems for corporate events, auditoriums, and large-scale productions.
                             </p>
                         </div>
@@ -102,12 +113,12 @@ export default function GallerySection() {
 
                     <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
                         <img className="h-full w-full object-cover object-right"
-                            src="https://images.unsplash.com/photo-1714976326351-0ecf0244f0fc?q=80&w=800&h=400&auto=format&fit=crop"
+                            src="/SoundSystem.jpg"
                             alt="Audio Design Install" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="text-3xl">Professional Audio Systems</h1>
-                            <p className="text-sm">
+                            <h1 className="hidden  md:block text-3xl">Professional Audio Systems</h1>
+                            <p className="hidden md:block text-sm">
                                 Expert audio design and installation delivering crystal-clear sound for conference rooms and event spaces.
                             </p>
                         </div>
@@ -115,12 +126,12 @@ export default function GallerySection() {
 
                     <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
                         <img className="h-full w-full object-cover object-center"
-                            src="https://images.unsplash.com/photo-1736220690062-79e12ca75262?q=80&w=800&h=400&auto=format&fit=crop"
+                            src="/visual.jpg"
                             alt="Lighting & Visual Design" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="text-3xl">Lighting & Visual Integration</h1>
-                            <p className="text-sm">
+                            <h1 className="hidden  md:block text-3xl">Lighting & Visual Integration</h1>
+                            <p className="hidden md:block text-sm">
                                 Advanced lighting and visual solutions that enhance atmosphere and elevate audience experience.
                             </p>
                         </div>

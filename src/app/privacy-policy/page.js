@@ -1,11 +1,21 @@
 export default function PrivacyPolicyPage() {
   return (
     <div
-      className="relative px-10 pt-16 pb-20
-      before:content-[''] before:absolute before:inset-0
-      before:bg-[url('/service.webp')] before:bg-cover before:bg-center
-      after:content-[''] after:absolute after:inset-0
-      after:bg-black/80"
+      className="px-4 md:px-10 lg:px-30 p-10 md:pt-15 relative overflow-hidden
+  before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-full
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]"
     >
       <div className="relative z-10 max-w-6xl mx-auto text-white">
 

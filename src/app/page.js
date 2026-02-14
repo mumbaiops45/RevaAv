@@ -152,11 +152,26 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative
+      <div className="intro px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1] scroll-fade">
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-right-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  bg-[#0b1220]
+  text-white
+  scroll-fade">
+
 
         <div className="flex flex-col md:flex-row items-center gap-8 relative z-50">
 
@@ -202,11 +217,26 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="Services px-6 pt-12 md:px-30 md:pt-15 relative
-  before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80">
+      <div className="Services px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative 
+before:content-[''] before:absolute before:inset-0
+before:bg-gradient-to-tr
+before:from-transparent
+before:via-[#111827]
+before:to-[var(--primery)]/15
+before:z-[-1]
+
+after:content-[''] after:absolute after:-bottom-40 after:-left-40
+after:w-[450px] after:h-[450px]
+after:bg-[var(--secondary)]
+after:opacity-10
+after:blur-[150px]
+after:rounded-full
+after:z-[-1]
+
+bg-[#111827]
+text-white
+
+">
 
         <div className="relative z-20">
 
@@ -398,12 +428,25 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="About flex flex-col md:flex-row-reverse gap-6
-  px-6 md:px-10 lg:px-30 pt-12 md:pt-15 relative
+      <div className="About flex flex-col md:flex-row-reverse px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1] scroll-fade">
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-right-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  bg-[#0b1220]
+  text-white
+  scroll-fade">
 
         <div className="intro_disc flex flex-col gap-4 items-start
     w-full md:w-[60vw] md:pl-7">
@@ -446,11 +489,24 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="choose px-6 pt-12 md:px-10 md:pt-15 relative
-  before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1]">
+      <div className="choose px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative 
+before:content-[''] before:absolute before:inset-0
+before:bg-gradient-to-tr
+before:from-transparent
+before:via-[#111827]
+before:to-[var(--primery)]/15
+before:z-[-1]
+
+after:content-[''] after:absolute after:-bottom-40 after:-left-40
+after:w-[450px] after:h-[450px]
+after:bg-[var(--secondary)]
+after:opacity-10
+after:blur-[150px]
+after:rounded-full
+after:z-[-1]
+
+bg-[#111827]
+text-white">
 
         <div className="relative z-20">
 
@@ -462,12 +518,12 @@ const Home = () => {
             Why <strong className="text-[var(--primery)]">Choose Us</strong>
           </h2>
 
-          <div className="relative md:mx-10">
+          <div className="relative md:mx-10 h-auto">
 
             {/* LEFT BUTTON */}
             <button
               onClick={scrollLeft}
-              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-20
+              className="md:flex absolute md:-left-10 -left-4 md:top-1/2 bottom-0 -translate-y-1/2 z-20
           w-12 h-12 rounded-full bg-[var(--primery)]
           shadow-md items-center justify-center"
             >
@@ -477,7 +533,7 @@ const Home = () => {
             {/* RIGHT BUTTON */}
             <button
               onClick={scrollRight}
-              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-20
+              className="md:flex absolute md:-right-10 -right-4 md:top-1/2 bottom-0 -translate-y-1/2 z-20
           w-12 h-12 rounded-full bg-[var(--primery)]
           shadow-md items-center justify-center"
             >
@@ -490,7 +546,7 @@ const Home = () => {
               className="Carousel overflow-x-auto py-10
           [&::-webkit-scrollbar]:hidden"
             >
-              <div className="flex gap-6 md:gap-9 px-4 md:px-16">
+              <div className="flex gap-6 md:gap-9 px-4">
 
                 {services.map((item, index) => (
                   <div
@@ -521,11 +577,22 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="industry-serve px-6 py-12 md:px-10 md:py-16 relative
+      <div className="industry-serve px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1]">
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-10
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+  text-white">
 
         <h2 className="text-center text-xl md:text-2xl font-semibold relative pb-3
     after:content-[''] after:absolute
@@ -615,11 +682,22 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="Product-serve px-6 py-12 md:px-10 md:py-16 relative
+      <div className="Product-serve px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1]">
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-bottom-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-10
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+  text-white">
 
         <h2 className="text-center text-xl md:text-2xl font-semibold relative pb-3
     after:content-[''] after:absolute
@@ -628,19 +706,19 @@ const Home = () => {
     after:left-1/2 after:-translate-x-1/2 after:bottom-0">
           Product <strong className="text-[var(--primery)]">We Serve</strong>
         </h2>
-        <div className="flex items-center gap-6 max-w-6xl mx-auto mt-10">
+        <div className="flex flex-col md:flex-row items-stretch gap-6 max-w-6xl mx-auto mt-10">
 
           {/* Card 1 */}
-
           <div
             className="flex flex-col justify-center gap-3
-  group flex-grow w-56 h-[260px] relative overflow-hidden
-  transition-all duration-500 hover:w-[35vw] bg-white/10 backdrop-blur-lg border border-white/20
+    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
+    transition-all duration-500 md:hover:w-[35vw]
+    bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
-    transition duration-300 ease hover:translate-y-1 scroll-fade 
-"
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
           >
+
             {/* Top Circle */}
             <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
               <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
@@ -650,10 +728,7 @@ const Home = () => {
 
             {/* Icon */}
             <div className="w-12 fill-[var(--primery)]">
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
               </svg>
             </div>
@@ -667,22 +742,21 @@ const Home = () => {
             <p className="text-sm text-gray-400 leading-6">
               Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
             </p>
+
           </div>
-
-
-
 
 
           {/* Card 2 */}
           <div
             className="flex flex-col justify-center gap-3
-  group flex-grow w-56 h-[260px] relative overflow-hidden
-  transition-all duration-500 hover:w-[35vw] bg-white/10 backdrop-blur-lg border border-white/20
+    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
+    transition-all duration-500 md:hover:w-[35vw]
+    bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
-    transition duration-300 ease hover:translate-y-1 scroll-fade
-"
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
           >
+
             {/* Top Circle */}
             <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
               <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
@@ -692,11 +766,8 @@ const Home = () => {
 
             {/* Icon */}
             <div className="w-12 fill-[var(--primery)]">
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              <svg viewBox="0 0 24 24">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Z" />
               </svg>
             </div>
 
@@ -707,21 +778,23 @@ const Home = () => {
 
             {/* Description */}
             <p className="text-sm text-gray-400 leading-6">
-              Wharfedale is a renowned British audio brand known for its high-fidelity speakers that deliver rich, detailed, and natural sound for home entertainment and premium listening experiences.
+              Wharfedale is a renowned British audio brand known for its high-fidelity speakers that deliver rich, detailed, and natural sound.
             </p>
+
           </div>
 
 
           {/* Card 3 */}
           <div
             className="flex flex-col justify-center gap-3
-  group flex-grow w-56 h-[260px] relative overflow-hidden
-  transition-all duration-500 hover:w-[35vw] bg-white/10 backdrop-blur-lg border border-white/20
+    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
+    transition-all duration-500 md:hover:w-[35vw]
+    bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
-    transition duration-300 ease hover:translate-y-1 scroll-fade
-"
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
           >
+
             {/* Top Circle */}
             <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
               <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
@@ -731,11 +804,8 @@ const Home = () => {
 
             {/* Icon */}
             <div className="w-12 fill-[var(--primery)]">
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              <svg viewBox="0 0 24 24">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5" />
               </svg>
             </div>
 
@@ -746,19 +816,33 @@ const Home = () => {
 
             {/* Description */}
             <p className="text-sm text-gray-400 leading-6">
-              DAS Audio is a trusted pro audio brand, proudly Made in Spain, delivering powerful, clear, and durable sound systems for professional use.
+              DAS Audio is a trusted pro audio brand, proudly Made in Spain, delivering powerful, clear, and durable sound systems.
             </p>
+
           </div>
 
         </div>
 
+
       </div>
-      <div className="timonials px-4 py-12 md:px-10 md:py-16 relative
-  before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center
-  before:z-[-2]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80">
+      <div className="timonials choose px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative 
+before:content-[''] before:absolute before:inset-0
+before:bg-gradient-to-tr
+before:from-transparent
+before:via-[#111827]
+before:to-[var(--primery)]/15
+before:z-[-1]
+
+after:content-[''] after:absolute after:-bottom-40 after:-left-40
+after:w-[450px] after:h-[450px]
+after:bg-[var(--secondary)]
+after:opacity-10
+after:blur-[150px]
+after:rounded-full
+after:z-[-1]
+
+bg-[#111827]
+text-white">
 
         {/* CONTENT WRAPPER */}
         <div className="relative z-10">

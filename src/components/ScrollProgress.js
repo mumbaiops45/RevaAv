@@ -5,24 +5,35 @@ export default function ScrollProgress() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+    let ticking = false;
 
-      const scrolled = (scrollTop / height) * 100;
-      setScroll(scrolled);
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollTop = window.scrollY;
+          const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+          const scrolled = (scrollTop / height) * 100;
+          setScroll(scrolled);
+
+          ticking = false;
+        });
+
+        ticking = true;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
-      className="fixed top-0 left-0 h-[0.8] z-[9999]
-      bg-[var(--primery)] transition-all duration-200"
+      className="fixed top-0 left-0 h-[0.8px] z-[9999]
+      bg-[var(--primery)] transition-all duration-200 ease-out"
       style={{ width: `${scroll}%` }}
     />
   );

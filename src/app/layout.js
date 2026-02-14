@@ -9,9 +9,13 @@ import ScrollProgress from "@/components/ScrollProgress";
 
 
 export const metadata = {
-  title: "Reya AV",
-  description: "Leading Audio-Visual, LED & Lighting System Integrators in Bangalore",
+  title: {
+    default: "Reya AV",
+    template: "%s | Your Brand Name",
+  },
+  description: "Leading Audio-Visual, LED & Lighting System Integrators in Bangalore.",
 };
+
 
 export default function RootLayout({ children }) {
   return (

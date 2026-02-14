@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQ";
 
 
 
+
 export default function AboutClient() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -17,11 +18,21 @@ export default function AboutClient() {
   return (
     <>
       {/* ABOUT INTRO CONTENT */}
-      <div className="intro px-6 md:px-10 lg:px-30 pt-12 md:pt-15 relative
+      <div className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:z-[-1] z-1">
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-[400px]
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]">
 
         <h1 className="text-center text-2xl md:text-3xl font-bold mb-10 md:mb-15">
           About <span className="text-[var(--primery)]">Us</span>
@@ -53,11 +64,6 @@ export default function AboutClient() {
               hospitality venues, delivering affordable, high-quality
               <strong> sound, visual, and lighting solutions</strong>.
             </p>
-
-            <Link href="/about" className="btn-primary">
-              KNOW MORE
-            </Link>
-
           </div>
 
           {/* IMAGE SECTION */}
@@ -83,11 +89,22 @@ export default function AboutClient() {
 
       {/* SPECIALITIES CARDS SECTION (UNCHANGED) */}
       <section
-        className="relative px-10 py-20
+        className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80"
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-10
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+  text-white"
       >
         <div className="relative z-10 max-w-6xl mx-auto text-white">
 

@@ -29,11 +29,21 @@ export default function ProjectsPage() {
 
   return (
     <div
-      className="relative px-6 md:px-10 lg:px-30 pt-16 pb-20
-      before:content-[''] before:absolute before:inset-0
-      before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-      after:content-[''] after:absolute after:inset-0
-      after:bg-black/80 after:z-[-1]"
+      className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+  before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-[400px]
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]"
     >
       <div className="relative z-10 max-w-7xl mx-auto text-white">
 
@@ -47,7 +57,7 @@ export default function ProjectsPage() {
         </p>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-50">
 
           {projects.map((project, i) => (
             <div

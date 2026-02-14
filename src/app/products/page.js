@@ -14,11 +14,23 @@ export default function ServicesPage() {
 
     return (
         <div>
-            <div className="relative px-10 py-16
-      before:content-[''] before:absolute before:inset-0
-      before:bg-[url('/service.webp')] before:bg-cover before:bg-center
-      after:content-[''] after:absolute after:inset-0
-      after:bg-black/80"
+            <div className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+  before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-[400px]
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  "
             >
                 <div className="relative z-10 max-w-7xl mx-auto text-white">
 
@@ -86,11 +98,24 @@ export default function ServicesPage() {
 
                 </div>
             </div>
-            <div id="wharfedale-pro" className="intro px-10 pt-30 relative
+            <div id="wharfedale-pro" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:-z-10
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:-z-10 scroll-fade"
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-15
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  
+  text-white scroll-fade"
             >
                 <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
 
@@ -136,11 +161,24 @@ export default function ServicesPage() {
                 </div>
             </div>
 
-            <div id="wharfedale" className="intro px-10 pt-30 relative
+            <div id="wharfedale" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:-z-10
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:-z-10 scroll-fade"
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-right-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-15
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  
+  text-white scroll-fade"
             >
                 <div className="flex flex-col md:flex-row-reverse items-center gap-8 relative z-10">
 
@@ -184,11 +222,24 @@ export default function ServicesPage() {
                 </div>
             </div>
 
-            <div id="DAS" className="intro px-10 pt-30 relative
+            <div id="DAS" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
-  before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:-z-10
-  after:content-[''] after:absolute after:inset-0
-  after:bg-black/80 after:-z-10 scroll-fade"
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-top-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-15
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+
+  
+  text-white scroll-fade"
             >
                 <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
 
