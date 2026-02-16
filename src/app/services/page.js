@@ -189,8 +189,8 @@ export default function ServicesPage() {
 
                         <p className="text-gray-200">
                             <strong>Reya AV</strong> delivers professional
-                            <strong> audio design and installation solutions in Bangalore</strong>
-                            for hospitality venues, corporate offices, auditoriums, retail
+                            <strong> audio design and installation solutions in Bangalore </strong>
+                             for hospitality venues, corporate offices, auditoriums, retail
                             environments, and events. We provide complete sound system
                             planning, installation, calibration, and AMC support to ensure
                             crystal-clear audio quality and reliable performance.
@@ -251,7 +251,7 @@ export default function ServicesPage() {
 
                         <p className="text-gray-200">
                             <strong>Reya AV</strong> offers expert
-                            <strong> acoustic design and installation solutions in Bangalore</strong>
+                            <strong> acoustic design and installation solutions in Bangalore </strong>
                             to enhance sound clarity and reduce unwanted noise in hospitality
                             venues, corporate offices, auditoriums, studios, and commercial
                             environments. Our acoustic treatments ensure optimal sound quality,

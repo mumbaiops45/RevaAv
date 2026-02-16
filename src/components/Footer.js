@@ -74,7 +74,7 @@ export default function Footer() {
           <ul className="space-y-3 text-gray-300 text-sm">
             <li className="flex items-center gap-3">
               <MapPin className="text-[var(--primery)] stroke-[1.5]" />
-              RR Nagar, Bangalore, India
+              Bengaluru, Karnataka 560038
             </li>
 
             <li className="flex items-center gap-3">

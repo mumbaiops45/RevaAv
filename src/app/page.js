@@ -15,7 +15,7 @@ const services = [
     icon: <ShieldCheck
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -28,7 +28,7 @@ const services = [
     icon: <Layers
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -42,7 +42,7 @@ const services = [
     icon: <Landmark
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -57,7 +57,7 @@ const services = [
     icon: <Mic2
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -71,7 +71,7 @@ const services = [
     icon: <Handshake
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -85,7 +85,7 @@ const services = [
     icon: <Settings
       className="mb-7
     w-14 h-14
-    text-[var(--primery)]
+    text-white
     transition-all duration-300 ease-out
     hover:scale-110
     hover:drop-shadow-[0_0_12px_var(--primery)]
@@ -158,7 +158,7 @@ const Home = () => {
       <div className="intro px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
-  before:from-[var(--primery)]/20
+  before:from-white/20
   before:via-[#0b1220]
   before:to-transparent
   before:z-[-1]
