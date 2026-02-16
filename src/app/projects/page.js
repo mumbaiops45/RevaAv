@@ -52,8 +52,7 @@ export default function ProjectsPage() {
         </h1>
 
         <p className="text-center max-w-3xl mx-auto text-gray-300 mb-12">
-          Professional audio-visual, LED, acoustic and lighting solutions
-          across hospitality, corporate, healthcare and entertainment.
+          Take a look at some of our successfully executed projects, where technology meets design to create immersive and high-performance AV environments.
         </p>
 
         {/* GRID */}

@@ -107,7 +107,7 @@ export default function Footer() {
       hover:bg-[var(--primery)] 
       transition duration-300"
             >
-              <Instagram className="w-5 h-5 text-[var(--primery)] group- group-hover:text-black" />
+              <Instagram className="w-5 h-5 group-hover:w-10 group-hover:h-10 transition-all 3s ease text-[var(--primery)] group-hover:text-black" />
             </a>
 
             <a
@@ -116,7 +116,7 @@ export default function Footer() {
       hover:bg-[var(--primery)] 
       transition duration-300"
             >
-              <Facebook className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+              <Facebook className="w-5 h-5 group-hover:w-10 group-hover:h-10 transition-all 3s ease text-[var(--primery)] group-hover:text-black" />
             </a>
 
             <a
@@ -125,7 +125,7 @@ export default function Footer() {
       hover:bg-[var(--primery)] 
       transition duration-300"
             >
-              <Linkedin className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+              <Linkedin className="w-5 h-5 group-hover:w-10 group-hover:h-10 transition-all 3s ease text-[var(--primery)] group-hover:text-black" />
             </a>
 
             <a
@@ -134,7 +134,7 @@ export default function Footer() {
       hover:bg-[var(--primery)] 
       transition duration-300"
             >
-              <Youtube className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+              <Youtube className="w-5 h-5 group-hover:w-10 group-hover:h-10 transition-all 3s ease text-[var(--primery)] group-hover:text-black" />
             </a>
 
           </div>

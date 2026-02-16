@@ -140,7 +140,7 @@ export default function GallerySection() {
                 <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto mt-10">
 
                     {/* CARD 1 */}
-                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
                             src="/visual2.webp"
@@ -156,7 +156,7 @@ export default function GallerySection() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
                             src="/LEDKiosk.webp"
@@ -172,7 +172,7 @@ export default function GallerySection() {
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
                             src="/led-display2.webp"
