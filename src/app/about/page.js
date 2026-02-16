@@ -38,7 +38,7 @@ export default function AboutClient() {
           About <span className="text-[var(--primery)]">Us</span>
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 relative z-50">
+        <div className="flex flex-col md:flex-row items-center gap-8 relative">
 
           {/* TEXT SECTION */}
           <div className="intro_disc flex flex-col gap-3 items-start

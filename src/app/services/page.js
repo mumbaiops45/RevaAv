@@ -73,8 +73,8 @@ export default function ServicesPage() {
                         </div>
 
                         {/* RIGHT text */}
-                        <div className="my-auto">
-                            <p className="text-gray-300 leading-relaxed max-w-md mb-8 line-spa">
+                        <div className="my-auto md:mt-13">
+                            <p className="text-gray-300 leading-[2.5] max-w-md mb-8">
                                 Reya AV is a leading audio-visual system integration company based in Bangalore, established in 2017 by Mr. Akash Gupta, who brings over 20 years of experience in the audio and events industry. Originating from Auto Entertainment Inc. (2005), the company has grown into a trusted partner for hospitality and commercial AV solutions.
 
                                 We specialize in LED Wall Solutions, Audio Design & Installation, Acoustic Design, Visual Integration, Lighting Design, and Annual Maintenance Contracts (AMC) — delivering reliable, high-quality systems that enhance ambience, performance, and customer experience across pubs, restaurants, gyms, corporate spaces, and event venues.

@@ -40,16 +40,17 @@ export default function ServicesPage() {
                     </h1>
                     <div className="flex justify-center gap-6 h-[400px] w-full max-w-5xl mt-10 mx-auto">
 
-                        <a href="#wharfedale-pro" className="">
-                            <div className="relative group w-56 flex-grow h-[400px] transition-all duration-500 hover:w-full">
+                        <a href="#wharfedale-pro" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
+                            <div className="">
 
                                 <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
 
-                                <img
-                                    className="h-full w-full object-cover object-center"
+                                <div className="flex justify-center items-center"><Image fill
+                                    className=" w-full object-cover object-center"
                                     src="/wharfedale-pro.png"
                                     alt="Wharfedale Pro"
-                                />
+                                /></div>
+                                
 
                                 <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <h1 className="text-3xl">Wharfedale Pro</h1>
@@ -58,16 +59,17 @@ export default function ServicesPage() {
                             </div>
                         </a>
 
-                        <a href="#wharfedale" className="">
-                            <div className="relative group w-56 flex-grow h-[400px] transition-all duration-500 hover:w-full">
+                        <a href="#wharfedale" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
+                            <div className="">
 
                                 <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
 
-                                <img
-                                    className="h-full w-full object-cover object-center"
+                                <div className="flex justify-center items-center"><Image fill
+                                    className=" w-full object-cover object-center"
                                     src="/wharfedale.jpg"
                                     alt="Wharfedale Pro"
-                                />
+                                /></div>
+                                
 
                                 <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <h1 className="text-3xl">Wharfedale Pro</h1>
@@ -76,16 +78,17 @@ export default function ServicesPage() {
                             </div>
                         </a>
 
-                        <a href="#DAS" className="">
-                            <div className="relative group w-56 flex-grow h-[400px] transition-all duration-500 hover:w-full">
+                        <a href="#DAS" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
+                            <div className="">
 
                                 <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
 
-                                <img
-                                    className="h-full w-full object-cover object-center"
+                                <div className="flex justify-center items-center"><Image fill
+                                    className="w-full object-cover object-center"
                                     src="/DAS.png"
                                     alt="DAS Audio"
-                                />
+                                /></div>
+                                
 
                                 <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <h1 className="text-3xl">DAS Audio</h1>
@@ -98,7 +101,7 @@ export default function ServicesPage() {
 
                 </div>
             </div>
-            <div id="wharfedale-pro" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            <div id="wharfedale-pro" className="intro h-[70vh] px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -161,7 +164,7 @@ export default function ServicesPage() {
                 </div>
             </div>
 
-            <div id="wharfedale" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            <div id="wharfedale" className="intro h-[70vh] px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -222,7 +225,7 @@ export default function ServicesPage() {
                 </div>
             </div>
 
-            <div id="DAS" className="intro px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            <div id="DAS" className="intro h-[70vh] px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20

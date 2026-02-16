@@ -478,7 +478,7 @@ text-white
           </Link>
         </div>
 
-        <div className="w-full md:w-auto flex justify-center">
+        <div className="w-full mt-7 md:mt-0 md:w-auto flex justify-center">
           <Image
             src="/1.webp"
             alt="Reya AV audio visual LED lighting integrator"

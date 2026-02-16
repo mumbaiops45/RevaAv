@@ -140,54 +140,51 @@ export default function GallerySection() {
                 <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto mt-10">
 
                     {/* CARD 1 */}
-                    <div className="relative group h-40 hover:h-80 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?q=80&w=800&auto=format&fit=crop"
-                            alt="LED Wall Solution"
+                            src="/visual2.webp"
+                            alt="AVInstallation"
                         />
 
                         <div className="absolute inset-0 flex flex-col justify-end p-8 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                            <h1 className="text-2xl font-semibold">LED Wall Solutions</h1>
+                            <h1 className="text-2xl font-semibold">Audio | Lighting | Acoustic Design</h1>
                             <p className="text-sm">
-                                High-performance LED display systems for corporate events,
-                                auditoriums, and productions.
+                                Integrated AV solutions designed to elevate sound, enhance atmosphere, and optimize acoustic performance.
                             </p>
                         </div>
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="relative group h-40 hover:h-80 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="https://images.unsplash.com/photo-1714976326351-0ecf0244f0fc?q=80&w=800&auto=format&fit=crop"
-                            alt="Audio Design Install"
+                            src="/LEDKiosk.webp"
+                            alt="LEDKiosk"
                         />
 
                         <div className="absolute inset-0 flex flex-col justify-end p-8 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
-                            <h1 className="text-2xl font-semibold">Professional Audio Systems</h1>
+                            <h1 className="text-2xl font-semibold">Interactive Digital Signage & LED Kiosks</h1>
                             <p className="text-sm">
-                                Expert audio design delivering crystal-clear sound for
-                                conference rooms and events.
+                                Premium LED kiosks delivering impactful visuals and seamless communication.
                             </p>
                         </div>
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="relative group h-40 hover:h-80 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-40 hover:h-96 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="https://images.unsplash.com/photo-1736220690062-79e12ca75262?q=80&w=800&auto=format&fit=crop"
-                            alt="Lighting & Visual Design"
+                            src="/led-display2.webp"
+                            alt="OutdoorLED"
                         />
 
                         <div className="absolute inset-0 flex flex-col justify-end p-8 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300">
                             <h1 className="text-2xl font-semibold">
-                                Lighting & Visual Integration
+                               High-Impact Outdoor LED Walls
                             </h1>
                             <p className="text-sm">
-                                Advanced lighting solutions that enhance atmosphere and
-                                elevate audience experience.
+                                Bright, high-resolution outdoor LED walls built for maximum visibility and bold brand impact.
                             </p>
                         </div>
                     </div>
