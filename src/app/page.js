@@ -4,6 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from "react";
 import { ShieldCheck, Layers, Landmark, Mic2, Handshake, Settings } from "lucide-react";
+import FAQSection from '@/components/FAQ';
+import { Phone, Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
+
 
 
 const services = [
@@ -920,6 +923,8 @@ text-white">
 
         </div>
       </div>
+      <FAQSection />
+      
     </div>
   )
 }

@@ -1,4 +1,6 @@
-import { MapPin, Phone,Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -65,7 +67,10 @@ export default function Footer() {
 
         {/* Contact Details */}
         <div>
-          <h4 className="text-lg font-semibold mb-4 text-[var(--primery)]">Contact Details</h4>
+          <h4 className="text-lg font-semibold mb-4 text-[var(--primery)]">
+            Contact Details
+          </h4>
+
           <ul className="space-y-3 text-gray-300 text-sm">
             <li className="flex items-center gap-3">
               <MapPin className="text-[var(--primery)] stroke-[1.5]" />
@@ -91,9 +96,50 @@ export default function Footer() {
                 info@example.com
               </a>
             </li>
-
           </ul>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-4 mt-10">
+
+            <a
+              href="#"
+              className="group p-2 rounded-full border border-white/20 
+      hover:bg-[var(--primery)] 
+      transition duration-300"
+            >
+              <Instagram className="w-5 h-5 text-[var(--primery)] group- group-hover:text-black" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full border border-white/20 
+      hover:bg-[var(--primery)] 
+      transition duration-300"
+            >
+              <Facebook className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full border border-white/20 
+      hover:bg-[var(--primery)] 
+      transition duration-300"
+            >
+              <Linkedin className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full border border-white/20 
+      hover:bg-[var(--primery)] 
+      transition duration-300"
+            >
+              <Youtube className="w-5 h-5 text-[var(--primery)] group-hover:text-black" />
+            </a>
+
+          </div>
         </div>
+
       </div>
 
       {/* Bottom Bar */}

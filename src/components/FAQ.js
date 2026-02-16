@@ -30,7 +30,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative
+      className="px-4 md:px-10 lg:px-30 p-10 md:pt-15 relative
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
