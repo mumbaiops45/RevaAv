@@ -38,6 +38,15 @@ const page = () => {
                     </button>
                 </div>
             </div>
+                    <div className="md:w-2/5 w-full">
+                      <Image
+                        src={image}
+                        alt={heading}
+                        width={600}
+                        height={400}
+                        className="rounded-xl w-full h-auto"
+                      />
+                    </div>
         </div>
     )
 }

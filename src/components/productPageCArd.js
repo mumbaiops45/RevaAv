@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function GlowSplitSection({
   id,
@@ -90,9 +91,8 @@ export default function GlowSplitSection({
 
       {/* Content */}
       <div
-        className={`relative z-10 flex flex-col md:flex-row items-center gap-8 ${
-          rowReverse ? "md:flex-row-reverse" : ""
-        }`}
+        className={`relative z-10 flex flex-col md:flex-row items-center gap-8 ${rowReverse ? "md:flex-row-reverse" : ""
+          }`}
       >
         {/* TEXT */}
         <div className="flex flex-col items-start gap-5 md:w-3/5">
@@ -113,15 +113,37 @@ export default function GlowSplitSection({
         </div>
 
         {/* IMAGE */}
-        <div className="md:w-2/5 w-full">
-          <Image
-            src={image}
-            alt={heading}
-            width={600}
-            height={400}
-            className="rounded-xl w-full h-auto"
-          />
+        <div className="group w-52 h-64 mx-auto [perspective:1000px] cursor-pointer">
+          <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+            {/* Front Side */}
+            <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+              <div className="md:w-2/5 w-full">
+                <Image
+                  src={image}
+                  alt={heading}
+                  width={600}
+                  height={400}
+                  className="rounded-xl w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Back Side */}
+            <div className=" bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease flex flex-col gap-5 text-center absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-[var(--primery)]/50 text-white [transform:rotateY(180deg)]">
+              <h3>Don’t Only Flip</h3>
+              <Link href="/contact" className="btn-primary ">
+                Contact Us
+              </Link>
+            </div>
+
+          </div>
         </div>
+
+
       </div>
     </div>
   );

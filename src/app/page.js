@@ -122,7 +122,7 @@ const Home = () => {
     <div>
       <div class="h-[90vh] relative pt-10 pb-12 bg-black xl:pt-10 sm:pb-16 lg:py-10 xl:py-10 2xl:pb-56">
         <div class="absolute inset-0">
-          <img class="object-cover w-full h-full" src="/hero1.webp" alt="" />
+          <img class="object-fill w-full h-full" src="/hero2.png" alt="" />
         </div>
 
         <div class="relative">
@@ -141,7 +141,7 @@ const Home = () => {
               <div class="flex items-center mt-5 space-x-3 sm:space-x-4">
 
                 <a
-                  href="#"
+                  href="/"
                   title=""
                   class="
                             inline-flex
@@ -760,119 +760,188 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
     after:left-1/2 after:-translate-x-1/2 after:bottom-0">
           Product <strong className="text-[var(--primery)]">We Serve</strong>
         </h2>
-        <div className="flex flex-col md:flex-row items-stretch gap-6 max-w-6xl mx-auto mt-10">
+        <div className="flex flex-col md:flex-row justify-center gap-6 max-w-6xl mx-auto mt-10">
 
           {/* Card 1 */}
-          <div
-            className="flex flex-col justify-center gap-3
-    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
-    transition-all duration-500 md:hover:w-[35vw]
+          <div className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+              {/* Front Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                <div className="md:w-2/5 w-full">
+                  <Image
+                    src={"/wharfedale-pro.png"}
+                    alt=""
+                    width={600}
+                    height={400}
+                    className=" w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              {/* Back Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                <div
+                  className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
     bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
     transition duration-300 ease hover:translate-y-1 scroll-fade"
-          >
+                >
 
-            {/* Top Circle */}
-            <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
-              <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
-                Audio
-              </p>
-            </div>
+                  {/* Top Circle */}
+                  <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                    <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                      Audio
+                    </p>
+                  </div>
 
-            {/* Icon */}
-            <div className="w-12 fill-[var(--primery)]">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  {/* Icon */}
+                  <div className="w-12 fill-[var(--primery)]">
+                    {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
-              </svg>
+              </svg> */}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-white">
+                    Wharfedale Pro
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-400 leading-6">
+                    Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                  </p>
+
+                </div>
+              </div>
+
             </div>
-
-            {/* Title */}
-            <h3 className="text-xl font-semibold text-white">
-              Wharfedale Pro
-            </h3>
-
-            {/* Description */}
-            <p className="text-sm text-gray-400 leading-6">
-              Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
-            </p>
-
           </div>
 
 
+
+
+
           {/* Card 2 */}
-          <div
-            className="flex flex-col justify-center gap-3
-    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
-    transition-all duration-500 md:hover:w-[35vw]
+          <div className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+              {/* Front Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                <div className="md:w-2/5 w-full">
+                  <Image
+                    src={"/wharfedale.jpg"}
+                    alt=""
+                    width={600}
+                    height={400}
+                    className=" w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              {/* Back Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                <div
+                  className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
     bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
     transition duration-300 ease hover:translate-y-1 scroll-fade"
-          >
+                >
 
-            {/* Top Circle */}
-            <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
-              <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
-                Audio
-              </p>
+                  {/* Top Circle */}
+                  <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                    <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                      Audio
+                    </p>
+                  </div>
+
+                  {/* Icon */}
+                  <div className="w-12 fill-[var(--primery)]">
+                    {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              </svg> */}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-white">
+                    Wharfedale Pro
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-400 leading-6">
+                    Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                  </p>
+
+                </div>
+              </div>
+
             </div>
-
-            {/* Icon */}
-            <div className="w-12 fill-[var(--primery)]">
-              <svg viewBox="0 0 24 24">
-                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Z" />
-              </svg>
-            </div>
-
-            {/* Title */}
-            <h3 className="text-xl font-semibold text-white">
-              Wharfedale
-            </h3>
-
-            {/* Description */}
-            <p className="text-sm text-gray-400 leading-6">
-              Wharfedale is a renowned British audio brand known for its high-fidelity speakers that deliver rich, detailed, and natural sound.
-            </p>
-
           </div>
 
 
           {/* Card 3 */}
-          <div
-            className="flex flex-col justify-center gap-3
-    group w-full md:flex-grow md:w-56 h-[260px] relative overflow-hidden
-    transition-all duration-500 md:hover:w-[35vw]
+          <div className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+              {/* Front Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                <div className="md:w-2/5 w-full">
+                  <Image
+                    src={"/DAS.png"}
+                    alt=""
+                    width={600}
+                    height={400}
+                    className="rounded-xl w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              {/* Back Side */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                <div
+                  className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
     bg-white/10 backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
     transition duration-300 ease hover:translate-y-1 scroll-fade"
-          >
+                >
 
-            {/* Top Circle */}
-            <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
-              <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
-                Audio
-              </p>
+                  {/* Top Circle */}
+                  <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                    <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                      Audio
+                    </p>
+                  </div>
+
+                  {/* Icon */}
+                  <div className="w-12 fill-[var(--primery)]">
+                    {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              </svg> */}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-semibold text-white">
+                    Wharfedale Pro
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-400 leading-6">
+                    Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                  </p>
+
+                </div>
+              </div>
+
             </div>
-
-            {/* Icon */}
-            <div className="w-12 fill-[var(--primery)]">
-              <svg viewBox="0 0 24 24">
-                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5" />
-              </svg>
-            </div>
-
-            {/* Title */}
-            <h3 className="text-xl font-semibold text-white">
-              D.A.S : SOUND WITH SOUL
-            </h3>
-
-            {/* Description */}
-            <p className="text-sm text-gray-400 leading-6">
-              DAS Audio is a trusted pro audio brand, proudly Made in Spain, delivering powerful, clear, and durable sound systems.
-            </p>
-
           </div>
 
         </div>

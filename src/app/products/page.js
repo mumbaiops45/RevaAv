@@ -15,7 +15,7 @@ export default function ServicesPage() {
 
     return (
         <div>
-            <div className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            <div className="px-4 md:px-10 lg:px-30 pt-10 md:py-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -39,64 +39,189 @@ export default function ServicesPage() {
                     <h1 className="text-center text-4xl font-bold mb-16">
                         Our <span className="text-[var(--primery)]">Products</span>
                     </h1>
-                    <div className="flex justify-center gap-6 h-[400px] w-full max-w-5xl mt-10 mx-auto">
+                    <div className="flex flex-col md:flex-row justify-center gap-6 max-w-6xl mx-auto mt-10">
 
-                        <a href="#wharfedale-pro" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
-                            <div className="">
+                        {/* Card 1 */}
+                        <Link href="#wharfedale-pro" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
-                                <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
+                                {/* Front Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                                    <div className="md:w-2/5 w-full">
+                                        <Image
+                                            src={"/wharfedale-pro.png"}
+                                            alt=""
+                                            width={600}
+                                            height={400}
+                                            className=" w-full h-auto"
+                                        />
+                                    </div>
+                                </div>
 
-                                <div className="flex justify-center items-center"><Image fill
-                                    className=" w-full object-cover object-center"
-                                    src="/wharfedale-pro.png"
-                                    alt="Wharfedale Pro"
-                                /></div>
+                                {/* Back Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                                    <div
+                                        className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
+    bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
+                                    >
 
+                                        {/* Top Circle */}
+                                        <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                                            <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                                                Audio
+                                            </p>
+                                        </div>
 
-                                <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                    <h1 className="text-3xl">Wharfedale Pro</h1>
+                                        {/* Icon */}
+                                        <div className="w-12 fill-[var(--primery)]">
+                                            {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              </svg> */}
+                                        </div>
+
+                                        {/* Title */}
+                                        <h3 className="text-xl font-semibold text-white">
+                                            Wharfedale Pro
+                                        </h3>
+
+                                        {/* Description */}
+                                        <p className="text-sm text-gray-400 leading-6">
+                                            Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                                        </p>
+
+                                    </div>
                                 </div>
 
                             </div>
-                        </a>
-
-                        <a href="#wharfedale" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
-                            <div className="">
-
-                                <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
-
-                                <div className="flex justify-center items-center"><Image fill
-                                    className=" w-full object-cover object-center"
-                                    src="/wharfedale.jpg"
-                                    alt="Wharfedale Pro"
-                                /></div>
+                        </Link>
 
 
-                                <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                    <h1 className="text-3xl">Wharfedale</h1>
+
+
+
+                        {/* Card 2 */}
+                        <Link href="#wharfedale" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                                {/* Front Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                                    <div className="md:w-2/5 w-full">
+                                        <Image
+                                            src={"/wharfedale.jpg"}
+                                            alt=""
+                                            width={600}
+                                            height={400}
+                                            className=" w-full h-auto"
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Back Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                                    <div
+                                        className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
+    bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
+                                    >
+
+                                        {/* Top Circle */}
+                                        <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                                            <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                                                Audio
+                                            </p>
+                                        </div>
+
+                                        {/* Icon */}
+                                        <div className="w-12 fill-[var(--primery)]">
+                                            {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              </svg> */}
+                                        </div>
+
+                                        {/* Title */}
+                                        <h3 className="text-xl font-semibold text-white">
+                                            Wharfedale Pro
+                                        </h3>
+
+                                        {/* Description */}
+                                        <p className="text-sm text-gray-400 leading-6">
+                                            Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                                        </p>
+
+                                    </div>
                                 </div>
 
                             </div>
-                        </a>
-
-                        <a href="#DAS" className="relative group w-60 flex-grow transition-all duration-500 hover:w-full">
-                            <div className="">
-
-                                <h2 className="absolute top-7 left-7 z-10 text-white">Audio</h2>
-
-                                <div className="flex justify-center items-center"><Image fill
-                                    className="w-full object-cover object-center"
-                                    src="/DAS.png"
-                                    alt="DAS Audio"
-                                /></div>
+                        </Link>
 
 
-                                <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                    <h1 className="text-3xl">DAS Audio</h1>
+                        {/* Card 3 */}
+                        <Link href="#DAS" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                            <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                                {/* Front Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
+                                    <div className="md:w-2/5 w-full">
+                                        <Image
+                                            src={"/DAS.png"}
+                                            alt=""
+                                            width={600}
+                                            height={400}
+                                            className="rounded-xl w-full h-auto"
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Back Side */}
+                                <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+                                    <div
+                                        className="flex flex-col justify-center gap-3
+    group w-full   h-[260px] relative overflow-hidden
+    transition-all duration-500
+    bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease hover:translate-y-1 scroll-fade"
+                                    >
+
+                                        {/* Top Circle */}
+                                        <div className="w-30 h-15 bg-[var(--primery)] rounded-2xl absolute -right-2 -top-2">
+                                            <p className="absolute bottom-3 left-5 text-2xl font-bold opacity-100">
+                                                Audio
+                                            </p>
+                                        </div>
+
+                                        {/* Icon */}
+                                        <div className="w-12 fill-[var(--primery)]">
+                                            {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m24,6.928v13.072h-11.5v3h5v1H6.5v-1h5v-3H0V4.5c0-1.379,1.122-2.5,2.5-2.5h12.98c-.253.295-.54.631-.856,1H2.5c-.827,0-1.5.673-1.5,1.5v14.5h22v-10.993l1-1.079Zm-12.749,3.094C19.058.891,19.093.855,19.11.838c1.118-1.115,2.936-1.113,4.052.002,1.114,1.117,1.114,2.936,0,4.052l-8.185,8.828c-.116,1.826-1.623,3.281-3.478,3.281h-5.59l.097-.582c.043-.257,1.086-6.16,5.244-6.396Zm2.749,3.478c0-1.379-1.122-2.5-2.5-2.5-2.834,0-4.018,3.569-4.378,5h4.378c1.378,0,2.5-1.121,2.5-2.5Zm.814-1.073l2.066-2.229c-.332-1.186-1.371-2.057-2.606-2.172-.641.749-1.261,1.475-1.817,2.125,1.117.321,1.998,1.176,2.357,2.277Zm.208-5.276c1.162.313,2.125,1.134,2.617,2.229l4.803-5.18c.737-.741.737-1.925.012-2.653-.724-.725-1.908-.727-2.637,0-.069.08-2.435,2.846-4.795,5.606Z" />
+              </svg> */}
+                                        </div>
+
+                                        {/* Title */}
+                                        <h3 className="text-xl font-semibold text-white">
+                                            Wharfedale Pro
+                                        </h3>
+
+                                        {/* Description */}
+                                        <p className="text-sm text-gray-400 leading-6">
+                                            Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                                        </p>
+
+                                    </div>
                                 </div>
 
                             </div>
-                        </a>
+                        </Link>
 
                     </div>
 
@@ -104,7 +229,7 @@ export default function ServicesPage() {
             </div>
 
             <GlowSplitSection
-            id="wharfedale-pro"
+                id="wharfedale-pro"
                 highlight="Wharfedale Pro"
                 heading=" Professional Audio Solutions"
                 subtitle="Premium AV Integrator"
@@ -118,7 +243,7 @@ Their focus is on providing clear, powerful sound, smooth system integration, an
 
 
             <GlowSplitSection
-            id="wharfedale"
+                id="wharfedale"
                 highlight="Wharfedale Audio Systems"
                 heading=" for Hospitality & Commercial Spaces"
                 subtitle="Premium AV Integrator"
@@ -130,7 +255,7 @@ Reya AV focuses on delivering affordable, high-performance sound systems with cl
                 rowReverse={true}
             />
             <GlowSplitSection
-            id="DAS"
+                id="DAS"
                 highlight="DAS Audio Systems"
                 heading=" for High-Performance Sound Experiences"
                 subtitle="Premium AV Integrator"
