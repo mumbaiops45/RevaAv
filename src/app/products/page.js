@@ -73,7 +73,7 @@ export default function ServicesPage() {
 
 
                                 <div className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                    <h1 className="text-3xl">Wharfedale Pro</h1>
+                                    <h1 className="text-3xl">Wharfedale</h1>
                                 </div>
 
                             </div>

@@ -120,39 +120,60 @@ const Home = () => {
 
   return (
     <div>
-      <div
-        className="
-        -mt-14
-        flex justify-center items-center
-        relative h-[95vh]
-        before:content-['']
-        before:absolute before:inset-0
-        before:bg-[url('/hero1.png')]
-        before:bg-cover before:bg-center
+      <div class="h-[90vh] relative pt-10 pb-12 bg-black xl:pt-10 sm:pb-16 lg:py-10 xl:py-10 2xl:pb-56">
+        <div class="absolute inset-0">
+          <img class="object-cover w-full h-full" src="/hero1.webp" alt="" />
+        </div>
 
-        after:content-['']
-        after:absolute after:inset-0
-        after:bg-black/70
-      "
-      >
+        <div class="relative">
+          <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+            <div class="w-full lg:w-2/3 xl:w-1/2">
+              <h1 class="tracking-tight">Audio • Visual • Lighting • Design • Installation • AMC Support</h1>
+              <p class="mt-6 tracking-tighter text-white">
+                <span class=" font-normal text-3xl">From Concept to</span><br />
+                <span class=" italic font-normal text-4xl text-[var(--primery)]">Installation & Long-Term Support</span>
+              </p>
+              <p class="mt-10 font-sans text-base font-normal leading-7 text-white text-opacity-70">Reya AV delivers professional LED wall solutions that enhance visual impact
+                and elevate customer experience across hospitality, corporate, and
+                entertainment spaces.</p>
 
-        <div className="relative z-10 flex flex-col gap-6 h-full w-full justify-center items-start p-[15%]">
-          <h1 className="font-bold text-4xl">
-            Audio • Visual • Lighting • Design • Installation • AMC Support
-          </h1>
 
-          <p>
-            Reya AV delivers professional LED wall solutions that enhance visual impact
-            and elevate customer experience across hospitality, corporate, and
-            entertainment spaces.
-          </p>
+              <div class="flex items-center mt-5 space-x-3 sm:space-x-4">
 
-          <button
-            className="btn-primary
-            "
-          >
-            Send Enquiry
-          </button>
+                <a
+                  href="#"
+                  title=""
+                  class="
+                            inline-flex
+                            items-center
+                            justify-center
+                            px-5
+                            py-2
+                            font-sans
+                            text-base
+                            font-semibold
+                            transition-all
+                            duration-200
+                            bg-transparent
+                            border-2
+                            rounded-full
+                            sm:leading-8
+                            text-white
+                            border-primary
+                            hover:bg-[var(--primery)]
+                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+                            hover:text-black
+                            sm:text-lg
+                            focus:ring-offset-secondary
+                        "
+                  role="button"
+                >
+
+                  Send Enquiry
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="intro px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative overflow-hidden
@@ -191,7 +212,7 @@ const Home = () => {
               {" "}Leading Audio-Visual, LED & Lighting System Integrators in Bangalore
             </h2>
 
-            <p className="text-sm md:text-base">
+            <p className="">
               Welcome to <strong>Reya AV</strong>, a leading
               <strong> audio-visual, LED, acoustic, and lighting system integrator
                 in Bangalore</strong>.
@@ -568,7 +589,7 @@ text-white">
                       {item.title}
                     </h3>
 
-                    <p className="text-sm mt-2">
+                    <p className="mt-2">
                       {item.desc}
                     </p>
                   </div>
@@ -614,8 +635,13 @@ text-white">
           {/* BOX 1 */}
           <div className="lg:[grid-area:box1] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Hospitality Industry</h3>
             <p>
               Audio-visual, lighting, and acoustic solutions designed
@@ -626,8 +652,13 @@ text-white">
           {/* BOX 2 */}
           <div className="lg:[grid-area:box2] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Corporate Offices</h3>
             <p>
               Smart AV and communication systems that enhance
@@ -638,8 +669,13 @@ text-white">
           {/* BOX 3 */}
           <div className="lg:[grid-area:box3] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Retail & Showrooms</h3>
             <p>
               Engaging visual and LED display solutions that attract
@@ -650,8 +686,13 @@ text-white">
           {/* BOX 4 */}
           <div className="lg:[grid-area:box4] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Educational Institutions</h3>
             <p>
               Interactive audio-visual setups for classrooms,
@@ -662,8 +703,13 @@ text-white">
           {/* BOX 5 */}
           <div className="lg:[grid-area:box5] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Commercial Spaces</h3>
             <p>
               End-to-end AV and lighting integration for large
@@ -674,8 +720,13 @@ text-white">
           {/* BOX 6 */}
           <div className="lg:[grid-area:box6] scroll-slide
       bg-white/10 backdrop-blur-lg border border-white/20
-      rounded-xl p-6 shadow-lg
-      transition duration-300 hover:translate-y-1 hover:border-[var(--primery)]">
+rounded-xl p-6 shadow-lg
+transition-all duration-500 ease-out
+hover:-translate-y-2 hover:scale-[1.02]
+hover:border-[var(--primery)]
+hover:bg-white/15
+hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
+">
             <h3 className="text-[var(--primery)]">Event & Entertainment</h3>
             <p>
               High-impact sound, lighting, and display solutions
@@ -908,11 +959,11 @@ text-white">
               scroll-fade
             "
                 >
-                  <p className="text-sm md:text-base leading-relaxed">
+                  <p className="leading-relaxed">
                     “{item.text}”
                   </p>
 
-                  <h4 className="mt-4 font-semibold text-[var(--primery)]">
+                  <h4 className="mt-4 text-[var(--primery)]">
                     — {item.name}
                   </h4>
                 </div>
@@ -924,7 +975,70 @@ text-white">
         </div>
       </div>
       <FAQSection />
-      
+      <section
+        className="relative px-6 md:px-12 lg:px-24 py-16 mt-20 overflow-hidden
+  before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-black
+  before:z-[-1]
+
+  after:content-[''] after:absolute after:-bottom-32 after:-left-32
+  after:w-[400px] after:h-[400px]
+  after:bg-[var(--secondary)]
+  after:opacity-10
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]
+  text-white scroll-fade"
+      >
+        <div className="max-w-6xl mx-auto">
+
+          <div className="bg-white/10 backdrop-blur-xl border border-white/20 
+      rounded-2xl p-10 md:p-16 text-center
+      shadow-[0_20px_60px_rgba(0,0,0,0.5)]
+      transition-all duration-500 hover:shadow-[0_25px_80px_rgba(0,0,0,0.7)]">
+
+            {/* Heading */}
+            <h2 className="text-2xl md:text-4xl font-semibold leading-tight">
+              Ready to Elevate Your
+              <span className="text-[var(--primery)]"> Audio • Visual • Lighting </span>
+              Experience?
+            </h2>
+
+            {/* Subtext */}
+            <p className="mt-6 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              From concept to installation and long-term AMC support,
+              we design and deliver intelligent AV solutions tailored
+              for hospitality, corporate, retail, and commercial spaces.
+            </p>
+
+            {/* Buttons */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
+
+              <Link
+                href="/contact"
+                className="btn-primary flex items-center"
+              >
+                Get a Free Consultation
+              </Link>
+
+              <Link
+                href="/projects"
+                className="btn-secondary "
+              >
+                View Our Projects
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
     </div>
   )
 }

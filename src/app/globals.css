@@ -194,7 +194,25 @@ html {
     transform: translateX(0);
   }
 }
+/* animation for about page */
+@keyframes slideInRight40 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.animate-slideInRight40 {
+  animation: slideInRight40 4s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 30%;
+}
+
+/* animation for about page end */
 
 
 

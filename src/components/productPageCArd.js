@@ -51,8 +51,8 @@ export default function GlowSplitSection({
   /* 🎯 Slide Direction Logic */
   const slideFrom =
     slideDirection === "right"
-      ? "translate-x-24"
-      : "-translate-x-24";
+      ? "translate-x-40"
+      : "-translate-x-40";
 
   return (
     <div
@@ -64,7 +64,7 @@ export default function GlowSplitSection({
       className={`intro relative overflow-hidden
       px-4 md:px-10 lg:px-30 pt-20 md:p-30
       text-white
-      transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)]
+      transition-all duration-[3s] ease-[cubic-bezier(0.22,1,0.36,1)]
       ${inView ? "opacity-100 translate-x-0" : `opacity-0 ${slideFrom}`}
       `}
     >
