@@ -1,4 +1,7 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image";
+
 
 export default function ProjectsPage() {
 
@@ -56,27 +59,49 @@ export default function ProjectsPage() {
         </p>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-50">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-50">
 
           {projects.map((project, i) => (
             <div
               key={i}
-              className={`
-                scroll-slide
-                relative bg-white/10 backdrop-blur-lg
-                border border-white/20 rounded-xl p-6
-                shadow-lg hover:border-[var(--primery)]
-                transition duration-300
-
-                ${i % 2 === 0 ? "lg:slide-left" : "lg:slide-right"}
-
-                after:content-['']
-                after:absolute after:left-0 after:bottom-0
-                after:w-full after:h-[3px]
-                after:bg-[var(--primery)]
-              `}
             >
-              <p className="text-gray-200">{project}</p>
+              <div className="group w-70 h-75 mx-auto [perspective:1000px] cursor-pointer relative">
+                <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                  {/* Front Side */}
+                  <div className="text-[15px] bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease flex flex-col gap-5 text-center absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-[var(--primery)]/50 after:content-[''] 
+after:absolute 
+after:bottom-0 
+after:left-0 
+after:w-full 
+after:h-[5px] 
+after:bg-[var(--primery)]/70  ">
+      {project}
+                    
+                  </div>
+
+                  {/* Back Side */}
+                  <div className=" bg-white/10 backdrop-blur-lg border border-white/20
+    shadow-lg rounded-xl p-6
+    hover:border-[var(--primery)]
+    transition duration-300 ease flex flex-col gap-5 text-center absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-[var(--primery)]/50 text-white [transform:rotateY(180deg)] after:content-[''] 
+after:absolute 
+after:top-0
+after:left-0 
+after:w-full 
+after:h-[5px] 
+after:bg-[var(--primery)]/70 ">
+                    <h3>Your brand could be the next name featured in our success stories.</h3>
+                    <Link href="/contact" className="btn-primary ">
+                      Contact Us
+                    </Link>
+                  </div>
+
+                </div>
+              </div>
             </div>
           ))}
 

@@ -213,8 +213,14 @@ html {
 }
 
 /* animation for about page end */
+ body {
+  overflow-x: hidden;
+}
 
-/* for hide scroll bar in the bottom */
+/* project page animation */
+
+
+/* project page animation end  */
 
 
 

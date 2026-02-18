@@ -56,52 +56,67 @@ export default function AcousticDesignInstallPage() {
 
               {[
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Acoustic Analysis & Assessment.webp",
                   title: "Acoustic Analysis & Assessment",
                   text: "Detailed evaluation of space acoustics to identify noise issues and reverberation challenges."
                 },
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Customized Acoustic Design.jpg",
                   title: "Customized Acoustic Design",
                   text: "Tailored acoustic treatment plans designed specifically for each space and usage."
                 },
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Sound Absorption Solutions.jpg",
                   title: "Sound Absorption Solutions",
                   text: "High-quality absorptive materials to reduce echo and improve speech and music clarity."
                 },
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Noise Control & Isolation.jpg",
                   title: "Noise Control & Isolation",
                   text: "Effective solutions to control sound spill and external noise intrusion."
                 },
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Aesthetic Acoustic Treatments.jpg",
                   title: "Aesthetic Acoustic Treatments",
                   text: "Acoustic solutions that blend seamlessly with interior design and ambience."
                 },
                 {
+                   alt:"",
+                  src:"/services/Acoustic Design Install/Precision Installation & Support.png",
                   title: "Precision Installation & Support",
                   text: "Accurate installation backed by long-term performance support and maintenance."
                 }
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
+                  className="flex justify-center items-center
+                                                             
+                                                           "
                 >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
+                  <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                                             border border-white/20
+                                                             rounded-xl shadow-lg
+                                                             hover:border-[var(--primery)]
+                                                             transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                    <Image
+                      src={item.src}
+                      alt={item.src}
+                      width={500}
+                      height={200}
+                      className="rounded-xl w-full h-40 object-cover"
+                    />
 
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
+                    <div>
+                      <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                      <p class="mb-6">{item.text}</p>
+                    </div>
+
+                  </div>
                 </div>
               ))}
 

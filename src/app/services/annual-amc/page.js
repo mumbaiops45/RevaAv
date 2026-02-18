@@ -69,53 +69,68 @@ export default function AnnualAMCPage() {
 
               {[
                 {
+                   alt:"",
+                  src:"/services/Annual AMC/Preventive Maintenance.jpg",
                   title: "Preventive Maintenance",
                   text: "Scheduled system checks to identify and resolve issues before they impact performance."
                 },
                 {
+                   alt:"",
+                  src:"/services/Annual AMC/Quick Response & Support.jpg",
                   title: "Quick Response & Support",
                   text: "Prompt technical assistance to minimize downtime and operational disruption."
                 },
                 {
+                   alt:"",
+                  src:"/services/Annual AMC/System Health Monitoring.jpg",
                   title: "System Health Monitoring",
                   text: "Continuous evaluation of system performance for long-term reliability."
                 },
                 {
+                   alt:"",
+                  src:"/\services/Annual AMC/Firmware & Configuration Updates.jpg",
                   title: "Firmware & Configuration Updates",
                   text: "Regular updates to keep systems optimized, secure, and compatible."
                 },
                 {
+                   alt:"",
+                  src:"/services/Annual AMC/buying_car_spare_parts_1__1.png",
                   title: "Spare Parts & Repairs",
                   text: "Efficient handling of repairs and replacement components as per AMC scope."
                 },
                 {
+                   alt:"",
+                  src:"/services/Annual AMC/Expert Technical Assistance.jpg",
                   title: "Expert Technical Assistance",
                   text: "Support from trained professionals with deep understanding of AV systems."
                 }
               ].map((item, i) => (
                 <div
-                  key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
-                >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
+                                 key={i}
+                                 className="flex justify-center items-center
+                                                              
+                                                            "
+                               >
+                                 <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                                              border border-white/20
+                                                              rounded-xl shadow-lg
+                                                              hover:border-[var(--primery)]
+                                                              transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                                   <Image
+                                     src={item.src}
+                                     alt={item.src}
+                                     width={500}
+                                     height={200}
+                                     className="rounded-xl w-full h-40 object-cover"
+                                   />
+               
+                                   <div>
+                                     <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                                     <p class="mb-6">{item.text}</p>
+                                   </div>
+               
+                                 </div>
+                               </div>
               ))}
 
             </div>

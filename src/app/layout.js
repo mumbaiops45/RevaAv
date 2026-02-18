@@ -19,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="text-white w-[100vw]"
+    <html  lang="en">
+      <body className="text-white"
         
       >
         <ScrollProgress />

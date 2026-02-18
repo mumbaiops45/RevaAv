@@ -65,53 +65,68 @@ export default function LightingDesignInstallPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
               {[
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Custom Lighting Design.jpg",
                   title: "Custom Lighting Design",
                   text: "Lighting layouts designed to suit the space, ambience, and functional requirements."
                 },
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Architectural & Ambient Lighting.jpg",
                   title: "Architectural & Ambient Lighting",
                   text: "Lighting solutions that enhance interiors, mood, and visual appeal."
                 },
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Dynamic & Mood Lighting.jpg",
                   title: "Dynamic & Mood Lighting",
                   text: "Flexible lighting systems that adapt to different times, events, and experiences."
                 },
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Control & Automation Systems.jpg",
                   title: "Control & Automation Systems",
                   text: "Intuitive lighting controls for effortless operation and scene management."
                 },
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Hospitality-Focused Lighting Solutions.jpg",
                   title: "Hospitality-Focused Lighting Solutions",
                   text: "Lighting designed to elevate guest comfort and overall hospitality experience."
                 },
-                {
+                { 
+                   alt:"",
+                  src:"/services/Lighting Design Install/Precision Installation & Support.jpg",
                   title: "Precision Installation & Support",
                   text: "Expert installation backed by long-term technical support and maintenance."
                 }
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
+                  className="flex justify-center items-center
+                                               
+                                             "
                 >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
+                  <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                               border border-white/20
+                                               rounded-xl shadow-lg
+                                               hover:border-[var(--primery)]
+                                               transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                    <Image
+                      src={item.src}
+                      alt={item.src}
+                      width={500}
+                      height={200}
+                      className="rounded-xl w-full h-40 object-cover"
+                    />
 
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
+                    <div>
+                      <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                      <p class="mb-6">{item.text}</p>
+                    </div>
+
+                  </div>
                 </div>
               ))}
 

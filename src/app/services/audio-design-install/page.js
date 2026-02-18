@@ -56,53 +56,68 @@ export default function AudioDesignInstallPage() {
 
               {[
                 {
+                   alt:"Custom-Audio-System-Design",
+                  src:"/services/Audio Design Install/Custom-Audio-System-Design.jpg",
                   title: "Custom Audio System Design",
                   text: "Tailored sound system designs based on space layout, acoustics, and intended usage."
                 },
                 {
+                   alt:"High-Quality-Speaker-Selection",
+                  src:"/services/Audio Design Install/High-Quality-Speaker-Selection.jpeg",
                   title: "High-Quality Speaker Selection",
                   text: "Carefully selected professional loudspeakers to ensure clarity, coverage, and tonal balance."
                 },
                 {
+                   alt:"Amplification-&-Signal-Processing",
+                  src:"/services/Audio Design Install/Amplification-&-Signal-Processing.jpeg",
                   title: "Amplification & Signal Processing",
                   text: "Reliable amplifiers and DSP configuration for consistent performance and system protection."
                 },
                 {
+                   alt:"Zoned-Audio-Distribution",
+                  src:"/services/Audio Design Install/Zoned-Audio-Distribution.jpg",
                   title: "Zoned Audio Distribution",
                   text: "Multi-zone audio solutions allowing independent control across different areas."
                 },
                 {
+                   alt:"",
+                  src:"/services/Audio Design Install/Seamless-System-Integration.jpg",
                   title: "Seamless System Integration",
                   text: "Audio systems integrated smoothly with visuals, lighting, and control platforms."
                 },
                 {
+                   alt:"",
+                  src:"/services/Audio Design Install/Long-Term-Reliability-&-Support.webp",
                   title: "Long-Term Reliability & Support",
                   text: "Built for durability and backed by ongoing technical support and maintenance."
                 }
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
-                >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
+               <div
+                                key={i}
+                                className="flex justify-center items-center
+                                                             
+                                                           "
+                              >
+                                <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                                             border border-white/20
+                                                             rounded-xl shadow-lg
+                                                             hover:border-[var(--primery)]
+                                                             transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                                  <Image
+                                    src={item.src}
+                                    alt={item.src}
+                                    width={500}
+                                    height={200}
+                                    className="rounded-xl w-full h-35 object-cover"
+                                  />
+              
+                                  <div>
+                                    <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                                    <p class="mb-6">{item.text}</p>
+                                  </div>
+              
+                                </div>
+                              </div>
               ))}
 
             </div>

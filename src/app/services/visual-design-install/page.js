@@ -57,53 +57,68 @@ export default function VisualDesignInstallPage() {
 
               {[
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Visual Design Install.jpg",
                   title: "Custom Visual System Design",
                   text: "Tailored visual system layouts based on space requirements and viewing conditions."
                 },
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Display & Projection Solutions.jpg",
                   title: "Display & Projection Solutions",
                   text: "Professional displays and projection systems designed for clarity and consistent performance."
                 },
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Video Distribution & Switching.jpg",
                   title: "Video Distribution & Switching",
                   text: "Reliable video distribution systems for smooth content delivery across multiple displays."
                 },
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Control & Automation Integration.jpg",
                   title: "Control & Automation Integration",
                   text: "User-friendly control systems enabling seamless operation of visual environments."
                 },
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Hospitality-Focused Visual Design.jpg",
                   title: "Hospitality-Focused Visual Design",
                   text: "Visual solutions designed to complement interior aesthetics and guest experience."
                 },
                 {
+                   alt:"",
+                  src:"/services/Visual Design Install/Precision Installation & Support.jpg",
                   title: "Precision Installation & Support",
                   text: "Expert installation backed by long-term technical support and maintenance."
                 }
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
-                >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
+              <div
+                               key={i}
+                               className="flex justify-center items-center
+                                                            
+                                                          "
+                             >
+                               <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                                            border border-white/20
+                                                            rounded-xl shadow-lg
+                                                            hover:border-[var(--primery)]
+                                                            transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                                 <Image
+                                   src={item.src}
+                                   alt={item.src}
+                                   width={500}
+                                   height={200}
+                                   className="rounded-xl w-full h-40 object-cover"
+                                 />
+             
+                                 <div>
+                                   <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                                   <p class="mb-6">{item.text}</p>
+                                 </div>
+             
+                               </div>
+                             </div>
               ))}
 
             </div>

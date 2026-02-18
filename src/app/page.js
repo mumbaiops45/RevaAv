@@ -120,9 +120,31 @@ const Home = () => {
 
   return (
     <div>
-      <div class="h-[90vh] relative pt-10 pb-12 bg-black xl:pt-10 sm:pb-16 lg:py-10 xl:py-10 2xl:pb-56">
-        <div class="absolute inset-0">
-          <img class="object-fill w-full h-full" src="/hero2.png" alt="" />
+      <div class="h-[90vh] relative pt-10 bg-black xl:pt-10 sm:pb-16 lg:py-10 xl:py-10 2xl:pb-56">
+        <div class="absolute inset-0
+  after:content-['']
+  after:absolute
+  after:inset-0
+  after:bg-black/60
+  md:after:bg-black/15
+">
+          {/* Desktop Image */}
+  <Image
+    src="/hero2.png"
+    alt="Hero Image"
+    fill
+    priority
+    className="object-fill hidden md:block"
+  />
+
+  {/* Mobile Image */}
+  <Image
+    src="/hero2Mobile.png"
+    alt="Hero Image"
+    fill
+    priority
+    className="object-cover block md:hidden"
+  />
         </div>
 
         <div class="relative">
@@ -870,12 +892,12 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
 
                   {/* Title */}
                   <h3 className="text-xl font-semibold text-white">
-                    Wharfedale Pro
+                    Wharfedale
                   </h3>
 
                   {/* Description */}
                   <p className="text-sm text-gray-400 leading-6">
-                    Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                   Wharfedale, Britain’s most renowned loudspeaker brand, combines heritage engineering with superior acoustic performance, making it an ideal choice for premium hospitality and commercial sound installations.
                   </p>
 
                 </div>
@@ -930,12 +952,12 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
 
                   {/* Title */}
                   <h3 className="text-xl font-semibold text-white">
-                    Wharfedale Pro
+                    D.A.S
                   </h3>
 
                   {/* Description */}
                   <p className="text-sm text-gray-400 leading-6">
-                    Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                    D.A.S. Audio, Made in Spain, delivers high-performance professional sound systems engineered with precision, passion, and powerful acoustic impact for live events and commercial installations.
                   </p>
 
                 </div>

@@ -58,54 +58,69 @@ export default function LedWallSolutionPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
               {[
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Outdoor-LED-Walls.jpg",
                   title: "Indoor & Outdoor LED Walls",
                   text: "Custom-engineered LED wall solutions suitable for both indoor and outdoor hospitality environments."
                 },
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Optimized-Pixel-Pitch-Selection.jpg",
                   title: "Optimized Pixel Pitch Selection",
                   text: "Carefully selected pixel pitch configurations to ensure sharp visuals at optimal viewing distances."
                 },
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Seamless-Panel-Integration.jpg",
                   title: "Seamless Panel Integration",
                   text: "Precision installation ensuring uniform brightness, alignment, and a seamless viewing experience."
                 },
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Content-&-Control-Systems.jpg",
                   title: "Content & Control Systems",
                   text: "Reliable control systems for smooth content playback, scheduling, and system management."
                 },
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Hospitality-Focused-Design.jpg",
                   title: "Hospitality-Focused Design",
                   text: "LED walls designed to complement ambience, lighting, and overall interior aesthetics."
                 },
-                {
+                { 
+                  alt:"",
+                  src:"/services/LED Wall Solution/Long-Term-Reliability-&-Support..webp",
                   title: "Long-Term Reliability & Support",
                   text: "Solutions built for durability, backed by ongoing technical support and maintenance."
                 }
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className="
-                  bg-white/10 backdrop-blur-lg
-                  border border-white/20
-                  rounded-xl p-8 shadow-lg
-                  hover:border-[var(--primery)]
-                  transition-all duration-300 ease-out
-                "
-                >
-                  <h3
-                    className="text-[var(--primery)] relative pb-3 mb-3 text-lg font-semibold
-                  after:content-[''] after:absolute
-                  after:bg-[var(--primery)] after:h-1 after:w-full
-                  after:left-0 after:bottom-0"
-                  >
-                    {item.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
+               <div
+                                key={i}
+                                className="flex justify-center items-center
+                                                             
+                                                           "
+                              >
+                                <div class="px-4 py-4 flex flex-col justify-center items-center bg-white/10 backdrop-blur-lg
+                                                             border border-white/20
+                                                             rounded-xl shadow-lg
+                                                             hover:border-[var(--primery)]
+                                                             transition-all duration-300 ease-out bg-neutral-primary-soft block rounded-xl shadow-xs">
+                                  <Image
+                                    src={item.src}
+                                    alt={item.alt}
+                                    width={500}
+                                    height={200}
+                                    className="rounded-xl w-full h-40 object-cover"
+                                  />
+              
+                                  <div>
+                                    <h5 class="text-[var(--primery)] mt-6 mb-2">{item.title}</h5>
+                                    <p class="mb-6">{item.text}</p>
+                                  </div>
+              
+                                </div>
+                              </div>
               ))}
 
             </div>
