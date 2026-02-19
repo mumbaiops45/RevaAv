@@ -32,7 +32,7 @@ export default function ProjectsPage() {
 
   return (
     <div
-      className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+      className="px-4 md:px-10 lg:px-15 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -69,7 +69,10 @@ export default function ProjectsPage() {
                 <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                   {/* Front Side */}
-                  <div className="text-[15px] bg-white/10 backdrop-blur-lg border border-white/20
+                  <div className="bg-white/10 bg-gradient-to-br 
+          from-[var(--primery)]/20
+          via-black/5
+          to-transparent  text-[15px]  backdrop-blur-lg border border-white/20
     shadow-lg rounded-xl p-6
     hover:border-[var(--primery)]
     transition duration-300 ease flex flex-col gap-5 text-center absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-[var(--primery)]/50 after:content-[''] 

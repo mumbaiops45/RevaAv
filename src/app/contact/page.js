@@ -143,7 +143,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <section className="CTA relative px-6 md:px-12 lg:px-24 py-16 mt-20 overflow-hidden
+      <section className="CTA relative px-6 md:px-12 lg:px-15 py-16 mt-20 overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20

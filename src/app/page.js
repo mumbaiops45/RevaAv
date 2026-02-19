@@ -650,7 +650,7 @@ text-white">
 
         <div className="
     grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7
-    gap-6 md:gap-10 mt-8
+    gap-6 md:gap-10 mt-10
     lg:[grid-template-areas:'box1_box1_box1_box2_box2_box3_box3''box4_box4_box5_box5_box6_box6_box6']
   ">
 

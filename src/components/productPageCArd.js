@@ -63,7 +63,7 @@ export default function GlowSplitSection({
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       className={`intro relative overflow-hidden
-      px-4 md:px-10 lg:px-30 pt-20 md:p-30
+      px-4 md:px-10 lg:px-15 pt-20 md:p-30
       text-white
       transition-all duration-[3s] ease-[cubic-bezier(0.22,1,0.36,1)]
       ${inView ? "opacity-100 translate-x-0" : `opacity-0 ${slideFrom}`}

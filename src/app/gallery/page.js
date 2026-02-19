@@ -72,7 +72,7 @@ export default function GallerySection() {
 
     return (
         <section
-            className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            className="px-4 md:px-10 lg:px-15 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -193,7 +193,7 @@ export default function GallerySection() {
 
 
                 <div
-                    className="
+                    className="lg:px-15
             grid gap-6 mt-10
             grid-cols-1
             sm:grid-cols-2

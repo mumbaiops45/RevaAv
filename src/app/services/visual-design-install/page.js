@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function VisualDesignInstallPage() {
   return (
     <>
-      <div className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+      <div className="px-4 md:px-10 lg:px-25 pt-10 md:pt-15 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
