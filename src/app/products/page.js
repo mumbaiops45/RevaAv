@@ -32,17 +32,17 @@ export default function ServicesPage() {
                     <h1 className="text-center text-4xl font-bold mb-16">
                         Our <span className="text-[var(--primery)]">Products</span>
                     </h1>
-                    <div className="flex flex-col md:flex-row justify-center gap-6 max-w-6xl mx-auto mt-10">
+                    <div className="mt-39 sm:mt-0 flex flex-col md:flex-row justify-center gap-6 max-w-6xl mx-auto mt-10">
 
                         {/* Card 1 */}
-                        <Link href="#wharfedale-pro" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                        <Link href="#wharfedale-pro" className=" mt-30 sm:mt-0 group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
                             <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                                 {/* Front Side */}
                                 <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                                     <div className="md:w-2/5 w-full">
                                         <Image
-                                            src={"/wharfedale-pro.png"}
+                                            src={"/product/wharfedale-pro.png"}
                                             alt=""
                                             width={600}
                                             height={400}
@@ -84,7 +84,7 @@ export default function ServicesPage() {
 
                                         {/* Description */}
                                         <p className="text-sm text-gray-400 leading-6">
-                                            Wharfedale Pro delivers powerful, reliable professional loudspeakers designed for live events, installations, and commercial audio systems with clear and impactful sound.
+                                           Wharfedale Pro delivers powerful, reliable loudspeakers for live events, installations, and commercial spaces with clear, impactful sound.
                                         </p>
 
                                     </div>
@@ -98,14 +98,14 @@ export default function ServicesPage() {
 
 
                         {/* Card 2 */}
-                        <Link href="#wharfedale" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                        <Link href="#wharfedale" className="mt-30 sm:mt-0 group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
                             <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                                 {/* Front Side */}
                                 <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                                     <div className="md:w-2/5 w-full">
                                         <Image
-                                            src={"/wharfedale.jpg"}
+                                            src={"/product/wharfedale.jpg"}
                                             alt=""
                                             width={600}
                                             height={400}
@@ -147,7 +147,7 @@ export default function ServicesPage() {
 
                                         {/* Description */}
                                         <p className="text-sm text-gray-400 leading-6">
-                                            Wharfedale, Britain’s most renowned loudspeaker brand, combines heritage engineering with superior acoustic performance, making it an ideal choice for premium hospitality and commercial sound installations.
+                                            Wharfedale, a renowned British brand, delivers heritage engineering and premium acoustic performance for hospitality and commercial installations.
                                         </p>
 
                                     </div>
@@ -158,14 +158,14 @@ export default function ServicesPage() {
 
 
                         {/* Card 3 */}
-                        <Link href="#DAS" className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+                        <Link href="#DAS" className="mt-30 sm:mt-0 group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
                             <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                                 {/* Front Side */}
                                 <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                                     <div className="md:w-2/5 w-full">
                                         <Image
-                                            src={"/DAS.png"}
+                                            src={"/product/DAS.png"}
                                             alt=""
                                             width={600}
                                             height={400}
@@ -207,7 +207,7 @@ export default function ServicesPage() {
 
                                         {/* Description */}
                                         <p className="text-sm text-gray-400 leading-6">
-                                            D.A.S. Audio, Made in Spain, delivers high-performance professional sound systems engineered with precision, passion, and powerful acoustic impact for live events and commercial installations.
+                                           D.A.S Audio, made in Spain, delivers high-performance sound systems for live events and commercial installations.
                                         </p>
 
                                     </div>
@@ -231,7 +231,7 @@ export default function ServicesPage() {
 Reya AV was established in 2017 by Mr. Akash Gupta, who has been working in the audio industry since 2005. With more than 20 years of experience, the team has successfully installed sound systems for pubs, breweries, restaurants, cafés, gyms, and large hospitality projects.
 
 Their focus is on providing clear, powerful sound, smooth system integration, and long-lasting performance tailored specifically for commercial spaces.."
-                image="/wharfedale-pro.png"
+                image="/product/wharfedale-pro.png"
             />
 
 
@@ -243,7 +243,7 @@ Their focus is on providing clear, powerful sound, smooth system integration, an
                 description="Reya AV provides high-quality Wharfedale audio solutions for pubs, breweries, restaurants, cafés, gyms, and large hospitality projects. Founded by Mr. Akash Gupta, who has over two decades of experience in the audio industry, the company specializes in permanent entertainment system installations for commercial spaces.
 
 Reya AV focuses on delivering affordable, high-performance sound systems with clear audio, smooth coverage, and long-lasting reliability without compromising on quality."
-                image="/wharfedale.jpg"
+                image="/product/wharfedale.jpg"
                 slideDirection="right"
                 rowReverse={true}
             />
@@ -255,7 +255,7 @@ Reya AV focuses on delivering affordable, high-performance sound systems with cl
                 description="Reya AV provides premium DAS Audio solutions for hospitality venues, large events, pubs, breweries, restaurants, gyms, and other commercial spaces. Led by Mr. Akash Gupta, who has over 20 years of industry experience, the company delivers powerful sound systems designed for clear audio, wide coverage, and strong impact.
 
 Whether for large-scale events or permanent installations, Reya AV ensures high-quality sound performance with long-lasting reliability."
-                image="/DAS.png"
+                image="/product/DAS.png"
                 slideDirection="left"
                 rowReverse={false}
             />

@@ -4,7 +4,6 @@
 
 :root {
   --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
   --primery: #02bde0;
   --secondary: #ADD036;
 }
@@ -15,6 +14,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+nav {
+  font-family: var(--font-heading);
+}
+footer {
   font-family: var(--font-heading);
 }
 /* size */
@@ -207,9 +212,9 @@ html {
 }
 
 .animate-slideInRight40 {
-  animation: slideInRight40 4s ease-out forwards;
+  animation: slideInRight40 8s ease-in-out forwards;
   animation-timeline: view();
-  animation-range: entry 30%;
+  animation-range: entry 0% cover 40%;
 }
 
 /* animation for about page end */

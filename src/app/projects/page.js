@@ -59,13 +59,13 @@ export default function ProjectsPage() {
         </p>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-50">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 pb-50">
 
           {projects.map((project, i) => (
             <div
               key={i}
             >
-              <div className="group w-70 h-75 mx-auto [perspective:1000px] cursor-pointer relative">
+              <div className="group w-full max-w-70 h-75 mx-auto [perspective:1000px] cursor-pointer relative">
                 <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                   {/* Front Side */}

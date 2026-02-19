@@ -57,17 +57,17 @@ export default function GallerySection() {
     }, []);
 
     const images = [
-        { area: "a", src: "/g1.webp" },
-        { area: "b", src: "/g2.jpg" },
-        { area: "c", src: "/g3.webp" },
-        { area: "d", src: "/g4.png" },
-        { area: "e", src: "/g5.avif" },
-        { area: "f", src: "/g6.png" },
-        { area: "g", src: "/g7.jpg" },
-        { area: "h", src: "/g8.webp" },
-        { area: "i", src: "/g9.jpg" },
-        { area: "j", src: "/g1.webp" },
-        { area: "k", src: "/g11.avif" },
+        { area: "a", src: "/gallery/gallery1.webp" },
+        { area: "b", src: "/gallery/gallery2.jpg" },
+        { area: "c", src: "/gallery/gallery3.webp" },
+        { area: "d", src: "/gallery/gallery4.png" },
+        { area: "e", src: "/gallery/gallery5.avif" },
+        { area: "f", src: "/gallery/gallery6.jpg" },
+        { area: "g", src: "/gallery/gallery8.png" },
+        { area: "h", src: "/gallery/gallery7.png" },
+        { area: "i", src: "/gallery/gallery9.jpg" },
+        { area: "j", src: "/gallery/gallery10.jpg" },
+        { area: "k", src: "/gallery/gallery11.avif" },
     ];
 
     return (
@@ -97,41 +97,41 @@ export default function GallerySection() {
                 </h1>
 
                 {/* RESPONSIVE GRID */}
-                <div className="flex items-center gap-6 h-[400px] w-full max-w-5xl mt-10 mx-auto">
-                    <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
+                <div className="flex md:flex-row flex-col items-center gap-6 h-auto md:h-[400px] w-full max-w-5xl mt-10 mx-auto">
+                    <div className="relative group grow-0 md:grow transition-all w-auto md:w-56 h-[400px] duration-500 md:hover:w-full">
                         <img className="h-full w-full object-cover object-center"
-                            src="/LedWall.jpg"
+                            src="/gallery/LedWall.jpg"
                             alt="LED Wall Solution" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="hidden  md:block text-3xl">LED Wall Solutions</h1>
-                            <p className="hidden md:block text-sm">
+                            <h1 className="text-3xl">LED Wall Solutions</h1>
+                            <p className=" text-sm">
                                 High-performance LED display systems for corporate events, auditoriums, and large-scale productions.
                             </p>
                         </div>
                     </div>
 
-                    <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
+                    <div className="relative group flex-grow transition-all w-auto md:w-56 h-[400px] duration-500 md:hover:w-full">
                         <img className="h-full w-full object-cover object-right"
-                            src="/SoundSystem.jpg"
+                            src="/gallery/SoundSystem.jpg"
                             alt="Audio Design Install" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="hidden  md:block text-3xl">Professional Audio Systems</h1>
-                            <p className="hidden md:block text-sm">
+                            <h1 className="text-3xl">Professional Audio Systems</h1>
+                            <p className=" text-sm">
                                 Expert audio design and installation delivering crystal-clear sound for conference rooms and event spaces.
                             </p>
                         </div>
                     </div>
 
-                    <div className="relative group flex-grow transition-all w-56 h-[400px] duration-500 hover:w-full">
+                    <div className="relative group grow-0 md:grow transition-all w-auto md:w-56 h-[400px] duration-500 md:hover:w-full">
                         <img className="h-full w-full object-cover object-center"
-                            src="/visual.jpg"
+                            src="/gallery/visual.jpg"
                             alt="Lighting & Visual Design" />
                         <div
                             className="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <h1 className="hidden  md:block text-3xl">Lighting & Visual Integration</h1>
-                            <p className="hidden md:block text-sm">
+                            <h1 className="text-3xl">Lighting & Visual Integration</h1>
+                            <p className=" text-sm">
                                 Advanced lighting and visual solutions that enhance atmosphere and elevate audience experience.
                             </p>
                         </div>
@@ -140,10 +140,10 @@ export default function GallerySection() {
                 <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto mt-10">
 
                     {/* CARD 1 */}
-                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-auto md:h-40 md:hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="/visual2.webp"
+                            src="/gallery/visual2.webp"
                             alt="AVInstallation"
                         />
 
@@ -156,10 +156,10 @@ export default function GallerySection() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-auto md:h-40 md:hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="/LEDKiosk.webp"
+                            src="/gallery/LEDKiosk.webp"
                             alt="LEDKiosk"
                         />
 
@@ -172,10 +172,10 @@ export default function GallerySection() {
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="relative group h-40 hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative group h-auto md:h-40 md:hover:h-120 transition-all duration-500 overflow-hidden rounded-xl">
                         <img
                             className="h-full w-full object-cover"
-                            src="/led-display2.webp"
+                            src="/gallery/outdoor-led-display.webp"
                             alt="OutdoorLED"
                         />
 

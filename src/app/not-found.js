@@ -3,14 +3,22 @@ import Link from "next/link";
 export default function Example() {
   return (
     <div
-      className="relative flex flex-col items-center justify-center
+      className=" relative flex flex-col items-center justify-center
       text-sm max-md:px-4 py-20 text-white
 
-      before:content-[''] before:absolute before:inset-0
-      before:bg-[url('/service.webp')] before:bg-cover before:bg-center before:z-[-1]
-
-      after:content-[''] after:absolute after:inset-0
-      after:bg-black/80 after:z-[-1]"
+       before:content-[''] before:absolute before:inset-0
+  before:bg-gradient-to-br
+  before:from-[var(--primery)]/20
+  before:via-[#0b1220]
+  before:to-transparent
+  before:z-[-1]
+      after:content-[''] after:absolute after:-top-0
+  after:w-full after:h-[400px]
+  after:bg-[var(--primery)]
+  after:opacity-20
+  after:blur-[120px]
+  after:rounded-full
+  after:z-[-1]"
     >
       <h1 className="text-4xl md:text-5xl font-bold">
         404 <span className="text-[var(--primery)]">Not Found</span>

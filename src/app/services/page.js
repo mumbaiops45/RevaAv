@@ -14,7 +14,7 @@ export default function ServicesPage() {
 
     return (
         <div>
-            <div className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 relative overflow-hidden
+            <div className="px-4 md:px-10 lg:px-30 pt-10 md:pt-15 pb-10 relative overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20
@@ -143,7 +143,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/led-wall-solutions-service.webp"
+                            src="/services/led-wall-solutions-service.webp"
                             alt="LED wall display solution Bangalore"
                             width={600}
                             height={400}
@@ -196,7 +196,7 @@ export default function ServicesPage() {
                             crystal-clear audio quality and reliable performance.
                         </p>
 
-                        <Link href="/services/audio-design-installation" className="btn-primary">
+                        <Link href="/services/audio-design-install" className="btn-primary">
                             KNOW MORE
                         </Link>
 
@@ -205,7 +205,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/audio-design-install-service.jpg"
+                            src="/services/audio-design-install-service.jpg"
                             alt="Audio design installation systems"
                             width={600}
                             height={400}
@@ -259,7 +259,7 @@ export default function ServicesPage() {
                             consultation, installation, and AMC support.
                         </p>
 
-                        <Link href="/services/acoustic-design-installation" className="btn-primary">
+                        <Link href="/services/acoustic-design-install" className="btn-primary">
                             KNOW MORE
                         </Link>
 
@@ -268,7 +268,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/acoustic-design-install-service.jpg"
+                            src="/services/acoustic-design-install-service.jpg"
                             alt="Acoustic design installation solutions"
                             width={600}
                             height={400}
@@ -322,7 +322,7 @@ export default function ServicesPage() {
                             reliable performance with complete installation and AMC support.
                         </p>
 
-                        <Link href="/services/visual-design-integration" className="btn-primary">
+                        <Link href="/services/visual-design-install" className="btn-primary">
                             KNOW MORE
                         </Link>
 
@@ -331,7 +331,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/visual-design-install-service.jpg"
+                            src="/services/visual-design-install-service.jpg"
                             alt="Visual design and AV integration"
                             width={600}
                             height={400}
@@ -385,7 +385,7 @@ export default function ServicesPage() {
                             and ongoing AMC support.
                         </p>
 
-                        <Link href="/services/lighting-design-installation" className="btn-primary">
+                        <Link href="/services/lighting-design-install" className="btn-primary">
                             KNOW MORE
                         </Link>
 
@@ -394,7 +394,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/lighting-design-install-service.jpg"
+                            src="/services/lighting-design-install-service.jpg"
                             alt="Lighting design installation solutions"
                             width={600}
                             height={400}
@@ -448,7 +448,7 @@ export default function ServicesPage() {
                             performance throughout the year.
                         </p>
 
-                        <Link href="/services/amc-services" className="btn-primary">
+                        <Link href="/services/annual-amc" className="btn-primary">
                             KNOW MORE
                         </Link>
 
@@ -457,7 +457,7 @@ export default function ServicesPage() {
                     {/* IMAGE SECTION */}
                     <div className="md:w-2/5">
                         <Image
-                            src="/annual-amc-service.avif"
+                            src="/services/annual-amc-service.avif"
                             alt="Annual maintenance contract AV systems"
                             width={600}
                             height={400}

@@ -130,7 +130,7 @@ const Home = () => {
 ">
           {/* Desktop Image */}
   <Image
-    src="/hero2.png"
+    src="/home/hero.png"
     alt="Hero Image"
     fill
     priority
@@ -139,7 +139,7 @@ const Home = () => {
 
   {/* Mobile Image */}
   <Image
-    src="/hero2Mobile.png"
+    src="/home/heroMobile.png"
     alt="Hero Image"
     fill
     priority
@@ -253,8 +253,8 @@ const Home = () => {
           {/* IMAGE */}
           <div className="w-full md:w-auto flex justify-center">
             <Image
-              src="/home.webp"
-              alt="Reya AV audio visual LED lighting integrator"
+              src="/home/Leading Audio-Visual, LED & Lighting System Integrators in Bangalore.webp"
+              alt="Leading Audio-Visual, LED & Lighting System Integrators in Bangalore"
               width={600}
               height={400}
               className="rounded-xl w-[80vw] md:w-[30vw] h-auto"
@@ -526,8 +526,8 @@ text-white
 
         <div className="w-full mt-7 md:mt-0 md:w-auto flex justify-center">
           <Image
-            src="/1.webp"
-            alt="Reya AV audio visual LED lighting integrator"
+            src="/home/Audio-Visual & LED .webp"
+            alt="Audio-Visual & LED"
             width={600}
             height={400}
             className="rounded-xl w-full max-w-md md:w-[30vw]"
@@ -775,14 +775,14 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
   after:z-[-1]
   text-white">
 
-        <h2 className="text-center text-xl md:text-2xl font-semibold relative pb-3
+        <h2 className="mb-35 sm:mb-0 text-center text-xl md:text-2xl font-semibold relative pb-3
     after:content-[''] after:absolute
     after:bg-[var(--primery)] after:h-1
     after:w-1/2 md:after:w-1/4
     after:left-1/2 after:-translate-x-1/2 after:bottom-0">
           Product <strong className="text-[var(--primery)]">We Serve</strong>
         </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6 max-w-6xl mx-auto mt-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-25 sm:gap-6 max-w-6xl mx-auto mt-10">
 
           {/* Card 1 */}
           <div className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
@@ -792,8 +792,8 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
               <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                 <div className="md:w-2/5 w-full">
                   <Image
-                    src={"/wharfedale-pro.png"}
-                    alt=""
+                    src={"/product/wharfedale-pro.png"}
+                    alt="wharfedale-pro"
                     width={600}
                     height={400}
                     className=" w-full h-auto"
@@ -802,7 +802,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
               </div>
 
               {/* Back Side */}
-              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full sm:h-auto [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
                 <div
                   className="flex flex-col justify-center gap-3
     group w-full   h-[260px] relative overflow-hidden
@@ -828,7 +828,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-white sm:mt-40 md:mt-34 lg:mt-0">
                     Wharfedale Pro
                   </h3>
 
@@ -855,8 +855,8 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
               <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                 <div className="md:w-2/5 w-full">
                   <Image
-                    src={"/wharfedale.jpg"}
-                    alt=""
+                    src={"/product/wharfedale.jpg"}
+                    alt="wharfedale"
                     width={600}
                     height={400}
                     className=" w-full h-auto"
@@ -865,7 +865,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
               </div>
 
               {/* Back Side */}
-              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full sm:h-auto [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
                 <div
                   className="flex flex-col justify-center gap-3
     group w-full   h-[260px] relative overflow-hidden
@@ -891,7 +891,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-white sm:mt-40 md:mt-34 lg:mt-0">
                     Wharfedale
                   </h3>
 
@@ -908,15 +908,15 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
 
 
           {/* Card 3 */}
-          <div className="group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
+          <div className="-sm-19 md:sm-0 group w-full h-64 mx-auto [perspective:1000px] cursor-pointer">
             <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
               {/* Front Side */}
               <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md bg-white border border-gray-200">
                 <div className="md:w-2/5 w-full">
                   <Image
-                    src={"/DAS.png"}
-                    alt=""
+                    src={"/product/DAS.png"}
+                    alt="D.A.S"
                     width={600}
                     height={400}
                     className="rounded-xl w-full h-auto"
@@ -925,7 +925,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
               </div>
 
               {/* Back Side */}
-              <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full sm:h-auto [backface-visibility:hidden] flex items-center justify-center rounded-md [transform:rotateY(180deg)]">
                 <div
                   className="flex flex-col justify-center gap-3
     group w-full   h-[260px] relative overflow-hidden
@@ -951,7 +951,7 @@ hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-xl font-semibold text-white sm:mt-40 md:mt-34 lg:mt-0">
                     D.A.S
                   </h3>
 
@@ -1066,8 +1066,7 @@ text-white">
         </div>
       </div>
       <FAQSection />
-      <section
-        className="relative px-6 md:px-12 lg:px-24 py-16 mt-20 overflow-hidden
+      <section className="CTA relative px-6 md:px-12 lg:px-24 py-16 mt-20 overflow-hidden
   before:content-[''] before:absolute before:inset-0
   before:bg-gradient-to-br
   before:from-[var(--primery)]/20

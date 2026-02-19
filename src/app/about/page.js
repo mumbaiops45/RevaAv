@@ -71,7 +71,7 @@ export default function AboutClient() {
           <div className="w-full md:w-auto flex justify-center">
 
             <Image
-              src="/4.jpg"
+              src="/about/Two Decades of Hospitality Audio-Visual Leadership Reya AV.jpg"
               alt="Reya AV audio visual LED lighting integrator"
               width={600}
               height={400}
@@ -145,7 +145,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto 
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto 
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -188,7 +188,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -229,7 +229,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -270,7 +270,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -311,7 +311,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -352,7 +352,7 @@ relative
           {/* Sliding Paragraph Card */}
           <div
             className=" md:w-1/2 w-[80vw] 
-    md:absolute md:left-100 lg:left-120 absolute top-35 md:top-auto
+    md:absolute md:left-85 lg:left-120 absolute top-35 md:top-auto
     bg-white/15 backdrop-blur-lg
     border border-white/35
     rounded-xl p-6 md:p-8 shadow-lg
@@ -366,6 +366,101 @@ relative
             </p>
           </div>
         </section>
+      </div>
+        <div className="timonials choose px-4 md:px-10 lg:px-15 pt-10 md:pt-15 md:pb-10 relative 
+before:content-[''] before:absolute before:inset-0
+before:bg-gradient-to-tr
+before:from-transparent
+before:via-[#111827]
+before:to-[var(--primery)]/15
+before:z-[-1]
+
+after:content-[''] after:absolute after:-bottom-40 after:-left-40
+after:w-[450px] after:h-[450px]
+after:bg-[var(--secondary)]
+after:opacity-10
+after:blur-[150px]
+after:rounded-full
+after:z-[-1]
+
+bg-[#111827]
+text-white">
+
+        {/* CONTENT WRAPPER */}
+        <div className="relative z-10">
+
+          {/* HEADING */}
+          <h2 className="text-center text-lg md:text-xl lg:text-2xl font-semibold relative pb-3
+      after:content-[''] after:absolute
+      after:bg-[var(--primery)]
+      after:h-[3px]
+      after:w-2/3 md:after:w-1/3 lg:after:w-1/4
+      after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+            What <strong className="text-[var(--primery)]">
+              Our Clients Say
+            </strong>
+          </h2>
+
+          {/* CAROUSEL */}
+          <div className="w-full overflow-hidden py-12 md:py-16 group">
+
+            <div className="flex gap-5 md:gap-6 animate-testimonial
+        group-hover:[animation-play-state:paused]">
+
+              {[
+                {
+                  text: "The audio and LED solutions were exceptional. Crystal-clear sound and stunning visuals.",
+                  name: "Hotel Grand Vista"
+                },
+                {
+                  text: "Professional AV installation with excellent acoustic clarity and timely execution.",
+                  name: "Orion Corporate Park"
+                },
+                {
+                  text: "Reliable AV integration backed by strong technical support and expertise.",
+                  name: "Elite Convention Center"
+                },
+                {
+                  text: "The audio and LED solutions were exceptional. Crystal-clear sound and stunning visuals.",
+                  name: "Hotel Grand Vista"
+                },
+                {
+                  text: "Professional AV installation with excellent acoustic clarity and timely execution.",
+                  name: "Orion Corporate Park"
+                },
+                {
+                  text: "Reliable AV integration backed by strong technical support and expertise.",
+                  name: "Elite Convention Center"
+                }
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="
+              w-[85vw] sm:w-[60vw] md:w-[40vw] lg:w-[25vw]
+              min-h-[220px] md:h-[40vh]
+              flex flex-col justify-center items-start flex-shrink-0
+              bg-white/10 backdrop-blur-lg
+              border border-white/20 shadow-lg rounded-xl
+              p-5 md:p-6
+              hover:border-[var(--primery)]
+              transition duration-300 ease hover:-translate-y-1
+              scroll-fade
+            "
+                >
+                  <p className="leading-relaxed">
+                    “{item.text}”
+                  </p>
+
+                  <h4 className="mt-4 text-[var(--primery)]">
+                    — {item.name}
+                  </h4>
+                </div>
+              ))}
+
+            </div>
+          </div>
+
+        </div>
       </div>
       <FAQSection />
 

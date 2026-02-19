@@ -91,7 +91,7 @@ export default function GlowSplitSection({
 
       {/* Content */}
       <div
-        className={`relative z-10 flex flex-col md:flex-row items-center gap-8 ${rowReverse ? "md:flex-row-reverse" : ""
+        className={`pb-10 md:pb-0 relative z-10 flex flex-col md:flex-row items-center gap-8 ${rowReverse ? "md:flex-row-reverse" : ""
           }`}
       >
         {/* TEXT */}
